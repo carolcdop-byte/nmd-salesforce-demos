@@ -3,7 +3,7 @@
 Portfolio de **Carol de Oliveira** (Salesforce Business Analyst y Product Owner): cinco demos construidas en una
 Developer Edition con Salesforce DX, Git y Claude Code, con la marca **No More Drama (NMD)**.
 
-> **No More Drama (NMD) es mi marca de consultoría Salesforce. NMD Beverage, NMD Clinic y NMD Care son empresas ficticias creadas para estas demos; todos los datos son inventados.**
+> **NMD Beverage, NMD Clinic y NMD Care son empresas ficticias creadas para estas demos; todos los datos son inventados.**
 
 Web: https://carolcdop-byte.github.io
 
