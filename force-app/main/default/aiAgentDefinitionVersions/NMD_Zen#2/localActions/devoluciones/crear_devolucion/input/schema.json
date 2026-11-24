@@ -1,0 +1,28 @@
+{
+  "required" : [ "numeroPedido", "email", "motivo" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "email" : {
+      "title" : "Email",
+      "description" : "Email con el que el cliente hizo la compra",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "motivo" : {
+      "title" : "Motivo",
+      "description" : "Motivo de la devolución con las palabras del cliente",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "numeroPedido" : {
+      "title" : "Numero Pedido",
+      "description" : "Número de pedido de 8 dígitos, por ejemplo 00000105",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

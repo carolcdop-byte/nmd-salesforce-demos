@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMD_Muestra_solo_visita_realizada</fullName>
+    <active>true</active>
+    <description>Compliance: solo se entregan muestras en visitas realizadas.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(Visita__r.Estado__c, "Realizada"))</errorConditionFormula>
+    <errorMessage>Solo se pueden registrar muestras en una visita Realizada.</errorMessage>
+</ValidationRule>

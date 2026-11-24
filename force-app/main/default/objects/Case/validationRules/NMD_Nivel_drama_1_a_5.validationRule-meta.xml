@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMD_Nivel_drama_1_a_5</fullName>
+    <active>true</active>
+    <description>El nivel de drama, si se rellena, debe ser un número entero entre 1 y 5.</description>
+    <errorConditionFormula>NOT(ISBLANK(Nivel_drama__c)) &amp;&amp; (Nivel_drama__c &lt; 1 || Nivel_drama__c &gt; 5)</errorConditionFormula>
+    <errorDisplayField>Nivel_drama__c</errorDisplayField>
+    <errorMessage>El nivel de drama debe estar entre 1 y 5.</errorMessage>
+</ValidationRule>

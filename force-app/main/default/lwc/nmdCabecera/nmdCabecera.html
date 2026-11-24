@@ -1,0 +1,24 @@
+<template>
+    <header class="cabecera">
+        <div class="interior">
+            <a href={rutas.inicio} class="logo" aria-label="NMD Beverage, inicio">
+                <img src={logo} alt="No More Drama" height="40">
+                <span class="marca">Beverage</span>
+            </a>
+            <nav aria-label="Menú principal" class="menu">
+                <template for:each={enlaces} for:item="e">
+                    <a key={e.href} href={e.href} class={e.clase} aria-current={e.actual}>{e.texto}</a>
+                </template>
+            </nav>
+            <div class="acciones">
+                <template lwc:if={esInvitado}>
+                    <a href={rutas.login} class="nmd-boton">Entrar</a>
+                </template>
+                <template lwc:else>
+                    <a href={rutas.miZona} class="nmd-boton">Mi zona</a>
+                    <a href={rutas.salir} class="salir">Salir</a>
+                </template>
+            </div>
+        </div>
+    </header>
+</template>

@@ -1,0 +1,35 @@
+<template>
+    <section class="hero">
+        <div class="nmd-contenedor hero-interior">
+            <div>
+                <h1 class="nmd-titulo claro">Cero drama, mucha cerveza</h1>
+                <p class="nmd-texto claro">Cervezas NMD para disfrutar sin complicaciones. Descúbrelas, apúntate al club Drama Points y, si algo se tuerce, Zen te echa una mano.</p>
+                <a href={rutas.cervezas} class="nmd-boton">Ver las cervezas</a>
+            </div>
+            <img src={hero} alt="Tres botellas NMD sonrientes" class="hero-img">
+        </div>
+    </section>
+    <section class="nmd-contenedor">
+        <div class="nmd-rejilla">
+            <a href={rutas.cervezas} class="nmd-tarjeta tarjeta-enlace">
+                <img src={botella} alt="" class="icono">
+                <h2 class="nmd-subtitulo">Nuestras cervezas</h2>
+                <p class="nmd-texto">Lager, IPA, Stout y Radler. Cuatro formas de decir «todo bien».</p>
+            </a>
+            <a href={rutas.club} class="nmd-tarjeta tarjeta-enlace">
+                <img src={club} alt="" class="icono ancho">
+                <h2 class="nmd-subtitulo">Club Drama Points</h2>
+                <p class="nmd-texto">Suma puntos con cada pedido y sube de Tranqui a Zen y a Drama Free.</p>
+            </a>
+            <a href={rutas.drama} class="nmd-tarjeta tarjeta-enlace">
+                <img src={drama} alt="" class="icono">
+                <h2 class="nmd-subtitulo">¿Tienes un drama?</h2>
+                <p class="nmd-texto">Cuéntanoslo y nuestro equipo lo revisa enseguida. Los urgentes, primero.</p>
+            </a>
+        </div>
+        <div class="nmd-aviso zen">
+            <img src={zen} alt="" class="zen-img">
+            <p class="nmd-texto"><strong>¿Prisa?</strong> Habla con Zen en el chat (abajo a la derecha): te dice cómo va tu pedido, gestiona devoluciones y, si hace falta, te pasa con una persona.</p>
+        </div>
+    </section>
+</template>

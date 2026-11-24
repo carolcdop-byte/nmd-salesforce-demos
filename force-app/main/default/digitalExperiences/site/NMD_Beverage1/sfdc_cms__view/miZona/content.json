@@ -1,0 +1,78 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Mi zona",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"c833c5de-a415-5c3f-b5c5-a9da8132fe97\",\"columns\":[{\"UUID\":\"ce77885f-ea96-5798-8700-0de73d11e18e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:nmdMiZona",
+                      "id": "8136c856-b824-5bee-a1c8-31fcc98a69fe",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "ce77885f-ea96-5798-8700-0de73d11e18e",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "c833c5de-a415-5c3f-b5c5-a9da8132fe97",
+              "type": "component"
+            }
+          ],
+          "id": "63e14ba3-55f0-5272-9ed8-1a699f55ba98",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "Tus pedidos, casos y Drama Points.",
+                "pageTitle": "Mi zona",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "fb426ab3-2daa-5df5-81b5-98c7d4941562",
+              "type": "component"
+            }
+          ],
+          "id": "c25c40ed-fc6c-5206-afc3-76c0c84cc2f6",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "a20f31d3-509f-5e89-a17f-3dcb566cb54e",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-mi-zona"
+  },
+  "urlName": "mi-zona"
+}

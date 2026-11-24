@@ -1,0 +1,6 @@
+@import 'c/nmdEstilos';
+.estrecho { max-width: 760px; }
+.cabecera-form { display: flex; gap: 1rem; align-items: center; }
+.icono { width: 90px; flex-shrink: 0; }
+.formulario { display: grid; gap: .75rem; }
+.legal { font-size: .85rem; margin: 0; }

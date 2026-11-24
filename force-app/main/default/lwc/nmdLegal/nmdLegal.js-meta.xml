@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <description>Aviso legal, privacidad o cookies del portal NMD Beverage (textos de demostración).</description>
+    <isExposed>true</isExposed>
+    <masterLabel>NMD Texto legal</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="tipo" type="String" label="Tipo de texto" datasource="aviso,privacidad,cookies" default="aviso"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

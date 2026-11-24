@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultado__c</fullName>
+    <label>Resultado</label>
+    <description>Qué pasó en la visita (call report).</description>
+    <length>2000</length>
+    <visibleLines>4</visibleLines>
+    <required>false</required>
+    <type>LongTextArea</type>
+</CustomField>

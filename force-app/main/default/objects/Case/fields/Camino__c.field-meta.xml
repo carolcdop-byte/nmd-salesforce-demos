@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Camino__c</fullName>
+    <label>Camino</label>
+    <description>Camino de atención que deciden las reglas del Flow NMD_Calcular_Camino según el nivel de drama. El agente puede cambiarlo y queda en el historial.</description>
+    <inlineHelpText>Urgente = llamar en 2 h (cola Urgencias NMD) · Contactar hoy = llamada hoy · Respuesta escrita = responder por escrito en 48 h.</inlineHelpText>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Urgente</fullName>
+                <default>false</default>
+                <label>Urgente</label>
+            </value>
+            <value>
+                <fullName>Contactar hoy</fullName>
+                <default>false</default>
+                <label>Contactar hoy</label>
+            </value>
+            <value>
+                <fullName>Respuesta escrita</fullName>
+                <default>false</default>
+                <label>Respuesta escrita</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

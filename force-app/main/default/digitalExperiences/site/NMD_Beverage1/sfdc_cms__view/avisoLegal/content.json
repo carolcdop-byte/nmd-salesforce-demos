@@ -1,0 +1,80 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Aviso legal",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"b61491e1-b9c4-57cc-9ece-b91401e36cd9\",\"columns\":[{\"UUID\":\"999c7199-8636-5386-afaf-052c832240ef\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "tipo": "aviso"
+                      },
+                      "definition": "c:nmdLegal",
+                      "id": "cd8e5344-b407-5273-b5d3-7138e0fc6025",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "999c7199-8636-5386-afaf-052c832240ef",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "b61491e1-b9c4-57cc-9ece-b91401e36cd9",
+              "type": "component"
+            }
+          ],
+          "id": "3931d94b-040f-550b-bec4-995b2a011197",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "Aviso legal",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "3b101d23-526c-5c29-b5b5-8143dae584be",
+              "type": "component"
+            }
+          ],
+          "id": "2648725f-5900-5175-90a5-01055868f620",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "8d37be70-0428-555a-b7d8-896de99c04a2",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-aviso-legal"
+  },
+  "urlName": "aviso-legal"
+}

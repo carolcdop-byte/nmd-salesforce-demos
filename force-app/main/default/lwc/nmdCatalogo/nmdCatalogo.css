@@ -1,0 +1,4 @@
+@import 'c/nmdEstilos';
+.cerveza { text-align: center; }
+.botella { height: 150px; }
+.nota { font-size: .85rem; margin-top: 1.5rem; }

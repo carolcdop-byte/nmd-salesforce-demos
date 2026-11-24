@@ -1,0 +1,15 @@
+@import 'c/nmdEstilos';
+.hero { background: var(--nmd-morado); }
+.hero-interior { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.claro { color: #fff; }
+.hero-img { width: 100%; max-width: 480px; justify-self: end; }
+.tarjeta-enlace, .tarjeta-enlace:link, .tarjeta-enlace:visited { display: block; text-decoration: none; color: inherit; }
+.tarjeta-enlace:hover, .tarjeta-enlace:focus { box-shadow: 0 4px 18px rgba(98, 5, 138, .25); text-decoration: none; }
+.icono { height: 90px; }
+.ancho { height: 70px; }
+.zen { display: flex; gap: 1rem; align-items: center; margin-top: 2rem; }
+.zen-img { width: 80px; flex-shrink: 0; }
+@media (max-width: 720px) {
+    .hero-interior { grid-template-columns: 1fr; }
+    .hero-img { justify-self: center; }
+}

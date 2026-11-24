@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drama__c</fullName>
+    <label>Drama</label>
+    <description>Semáforo del nivel de drama para ver la urgencia de un vistazo en las vistas de la cola. Solo lectura: se calcula a partir de Nivel de drama y Triaje IA fallido.</description>
+    <inlineHelpText>🔴 5 · 🟠 4 · 🟡 3 · 🟢 1-2 · ⚠️ la IA no pudo analizarlo · ⚪ sin triaje</inlineHelpText>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISBLANK(Nivel_drama__c), Triaje_IA_fallido__c), "⚠️ Revisar",
+CASE(Nivel_drama__c,
+  5, "🔴 5",
+  4, "🟠 4",
+  3, "🟡 3",
+  2, "🟢 2",
+  1, "🟢 1",
+  "⚪ —"))</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

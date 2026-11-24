@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningExperienceTheme xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultBrandingSet>No_More_Drama</defaultBrandingSet>
+    <description>Marca No More Drama: color principal morado NMD, cabecera morado noche y logo NMD.</description>
+    <masterLabel>No More Drama</masterLabel>
+    <shouldOverrideLoadingImage>false</shouldOverrideLoadingImage>
+</LightningExperienceTheme>

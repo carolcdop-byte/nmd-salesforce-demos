@@ -1,0 +1,12 @@
+@import 'c/nmdEstilos';
+.cabecera { background: var(--nmd-noche); }
+.interior { max-width: 1100px; margin: 0 auto; padding: .75rem 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.logo { display: flex; align-items: center; gap: .5rem; text-decoration: none; }
+.logo img { height: 40px; width: auto; max-width: 60vw; }
+.marca { color: var(--nmd-amarillo); font-weight: 700; font-size: 1.1rem; }
+.menu { display: flex; flex-wrap: wrap; gap: .25rem 1rem; flex: 1; }
+.enlace, .enlace:link, .enlace:visited { color: #fff; text-decoration: none; font-weight: 600; padding: .35rem 0; border-bottom: 3px solid transparent; }
+.enlace:hover, .enlace:focus, .enlace:link:hover, .enlace:link:focus { color: var(--nmd-amarillo); text-decoration: none; }
+.activo { border-bottom-color: var(--nmd-magenta); }
+.acciones { display: flex; align-items: center; gap: .75rem; }
+.salir, .salir:link, .salir:visited { color: var(--nmd-crema); font-size: .9rem; }

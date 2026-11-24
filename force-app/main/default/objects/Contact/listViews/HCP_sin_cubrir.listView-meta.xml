@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCP_sin_cubrir</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Especialidad__c</columns>
+    <columns>Segmento__c</columns>
+    <columns>Objetivo_visitas__c</columns>
+    <columns>Visitas_mes__c</columns>
+    <columns>Visitas_trimestre__c</columns>
+    <columns>Consentimiento_RGPD__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.HCP</value>
+    </filters>
+    <filters>
+        <field>Cobertura__c</field>
+        <operation>equals</operation>
+        <value>Sin cubrir</value>
+    </filters>
+    <label>HCP sin cubrir</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

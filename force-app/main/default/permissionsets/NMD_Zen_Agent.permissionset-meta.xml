@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permisos del usuario del agente Zen: ejecutar los 4 Flows de acciones de NMD. Los Flows se ejecutan en modo sistema, así que no necesita acceso directo a pedidos, contactos ni casos.</description>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>NMD_Consultar_Pedido</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>NMD_Crear_Devolucion</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>NMD_Crear_Incidencia</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>NMD_Escalar_a_Humano</flow>
+    </flowAccesses>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>NMD Zen Agent</label>
+</PermissionSet>

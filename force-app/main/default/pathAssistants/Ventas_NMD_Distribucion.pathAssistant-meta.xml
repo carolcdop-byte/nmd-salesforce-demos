@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Ventas NMD Distribución</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Objetivo:&lt;/b&gt; conseguir una cata.&lt;/p&gt;&lt;p&gt;Confirma quién decide qué cerveza se sirve (encargado de barra, jefe de compras o promotor) y cuántas cajas mueve al mes. Propón una fecha de cata.&lt;/p&gt;</info>
+        <picklistValueName>Prospección</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Objetivo:&lt;/b&gt; que prueben y elijan.&lt;/p&gt;&lt;p&gt;Lleva las 4 cervezas (Lager Zen, IPA Sin Drama, Stout Plan B y Radler Todo Bien) bien frías y apunta cuál gusta más. Cero drama: si no les convence ninguna, pregunta qué buscan.&lt;/p&gt;</info>
+        <picklistValueName>Cata</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Objetivo:&lt;/b&gt; presupuesto claro.&lt;/p&gt;&lt;p&gt;Crea el presupuesto desde la oportunidad. El descuento por volumen se aplica solo: 50+ cajas 5 %, 150+ 10 %, 300+ 15 %. Si añades descuento extra y el total pasa del 15 %, envíalo a aprobación antes de presentarlo.&lt;/p&gt;</info>
+        <picklistValueName>Propuesta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Objetivo:&lt;/b&gt; cerrar sin prometer de más.&lt;/p&gt;&lt;p&gt;Negocia cantidades y fechas de entrega, no el precio por debajo de lo aprobado. Sincroniza el presupuesto final con la oportunidad: al ganarla se crea el pedido con sus líneas.&lt;/p&gt;</info>
+        <picklistValueName>Negociación</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;¡Venta!&lt;/b&gt; Al guardar se crea el pedido con Estado de envío = Pendiente. El cliente podrá consultarlo con Zen usando el número de pedido y su email.&lt;/p&gt;</info>
+        <picklistValueName>Cerrada ganada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;p&gt;Anota en la descripción por qué se perdió (precio, otra marca, volumen…). Sin drama: programa un seguimiento para dentro de 3 meses.&lt;/p&gt;</info>
+        <picklistValueName>Cerrada perdida</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Distribucion</recordTypeName>
+</PathAssistant>

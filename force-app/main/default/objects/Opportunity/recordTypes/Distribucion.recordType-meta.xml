@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribucion</fullName>
+    <active>true</active>
+    <businessProcess>Proceso_NMD_Distribucion</businessProcess>
+    <description>Oportunidades B2B de NMD Distribución (venta de cerveza NMD a bares, restaurantes, festivales y distribuidores).</description>
+    <label>Distribución</label>
+</RecordType>

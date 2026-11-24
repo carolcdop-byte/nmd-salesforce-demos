@@ -1,0 +1,5 @@
+@import 'c/nmdEstilos';
+.estrecho { max-width: 760px; }
+.zen { width: 120px; }
+.lista { padding-left: 1.25rem; line-height: 1.8; list-style: disc; }
+.responsable { margin-top: 1.5rem; }

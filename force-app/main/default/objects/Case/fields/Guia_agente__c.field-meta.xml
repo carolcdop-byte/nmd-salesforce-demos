@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guia_agente__c</fullName>
+    <label>Guía para el agente</label>
+    <description>Guía de 3-4 puntos generada por la IA en el triaje: qué reconocer, qué se puede ofrecer, qué no prometer y tono.</description>
+    <inlineHelpText>Generada por IA. Es una ayuda, no una instrucción: decides tú.</inlineHelpText>
+    <length>2000</length>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

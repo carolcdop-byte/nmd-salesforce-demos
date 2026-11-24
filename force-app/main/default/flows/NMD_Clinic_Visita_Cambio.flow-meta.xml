@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>NMD Clinic: al crear una visita o cambiar su estado, fecha o HCP, recalcula la cobertura del HCP.</description>
+    <environments>Default</environments>
+    <interviewLabel>NMD Clinic Visita Cambio {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NMD Clinic Visita Cambio</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Recalcular</targetReference>
+        </connector>
+        <filterFormula>OR(ISNEW(), ISCHANGED({!$Record.Estado__c}), ISCHANGED({!$Record.Fecha__c}), ISCHANGED({!$Record.HCP__c}))</filterFormula>
+        <object>Visita__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Recalcular</name>
+        <label>Recalcular HCP</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>NMD_Clinic_Recalcular_HCP</flowName>
+        <inputAssignments>
+            <name>hcpId</name>
+            <value>
+                <elementReference>$Record.HCP__c</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

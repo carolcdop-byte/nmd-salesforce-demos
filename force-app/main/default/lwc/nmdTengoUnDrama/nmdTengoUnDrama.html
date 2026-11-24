@@ -1,0 +1,38 @@
+<template>
+    <section class="nmd-contenedor estrecho">
+        <div class="cabecera-form">
+            <img src={drama} alt="" class="icono">
+            <div>
+                <h1 class="nmd-titulo">Tengo un drama</h1>
+                <p class="nmd-texto">Cuéntanos qué ha pasado. Lo revisamos enseguida y los casos urgentes pasan delante.</p>
+            </div>
+        </div>
+        <template lwc:if={numeroCaso}>
+            <div class="nmd-aviso" role="status">
+                <p class="nmd-texto"><strong>Recibido.</strong> Tu número de caso es <strong>{numeroCaso}</strong>. Te escribiremos al email que nos has dado.</p>
+            </div>
+        </template>
+        <template lwc:elseif={enviado}>
+            <div class="nmd-aviso" role="status"><p class="nmd-texto"><strong>Recibido.</strong> Te escribiremos al email que nos has dado.</p></div>
+        </template>
+        <template lwc:else>
+            <form class="nmd-tarjeta formulario" onsubmit={enviar} novalidate>
+                <lightning-input label="Nombre" name="nombre" required max-length="80" onchange={cambiar}></lightning-input>
+                <lightning-input type="email" label="Email" name="email" required onchange={cambiar}></lightning-input>
+                <lightning-input label="Número de pedido (si lo tienes)" name="numeroPedido" max-length="20" onchange={cambiar}></lightning-input>
+                <lightning-combobox label="¿Qué tipo de drama es?" name="tipo" required options={tipos} value={datos.tipo}
+                    placeholder="Elige una opción" onchange={cambiar}></lightning-combobox>
+                <lightning-textarea label="Cuéntanos qué ha pasado" name="descripcion" required max-length="4000"
+                    message-when-value-missing="Cuéntanos tu drama." onchange={cambiar}></lightning-textarea>
+                <div class="nmd-trampa" aria-hidden="true">
+                    <label>Web<input type="text" name="web" tabindex="-1" autocomplete="off" onchange={cambiarTrampa}></label>
+                </div>
+                <lightning-input type="checkbox" name="acepta" required onchange={cambiarCheck}
+                    label="Acepto la política de privacidad para que gestionéis mi caso"></lightning-input>
+                <p class="legal">Usamos tus datos solo para resolver este caso. Lee la <a href={rutas.privacidad} target="_blank">política de privacidad</a>.</p>
+                <template lwc:if={error}><div class="nmd-error" role="alert">{error}</div></template>
+                <button type="submit" class="nmd-boton" disabled={enviando}>Enviar mi drama</button>
+            </form>
+        </template>
+    </section>
+</template>

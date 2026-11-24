@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Tengo un drama",
+  "contentBody": {
+    "activeViewId": "tengoUnDrama",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-tengo-un-drama",
+    "urlPrefix": "tengo-un-drama"
+  },
+  "urlName": "tengo-un-drama"
+}

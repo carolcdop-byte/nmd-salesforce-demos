@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proceso_NMD_Distribucion</fullName>
+    <description>Proceso de ventas B2B de NMD Distribución: Prospección, Cata, Propuesta, Negociación, Cerrada ganada o perdida.</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Prospección</fullName>
+    </values>
+    <values>
+        <fullName>Cata</fullName>
+    </values>
+    <values>
+        <fullName>Propuesta</fullName>
+    </values>
+    <values>
+        <fullName>Negociación</fullName>
+    </values>
+    <values>
+        <fullName>Cerrada ganada</fullName>
+    </values>
+    <values>
+        <fullName>Cerrada perdida</fullName>
+    </values>
+</BusinessProcess>

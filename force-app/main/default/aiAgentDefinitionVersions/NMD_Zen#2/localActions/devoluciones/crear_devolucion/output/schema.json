@@ -1,0 +1,30 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "mensaje" : {
+      "title" : "Mensaje",
+      "description" : "Mensaje para el cliente con el resultado",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    },
+    "numeroCaso" : {
+      "title" : "Numero Caso",
+      "description" : "Número del caso de devolución creado, vacío si no se ha creado",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    },
+    "verificado" : {
+      "title" : "Verificado",
+      "description" : "Verdadero si el pedido existe y el email coincide con su contacto",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

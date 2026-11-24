@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Mi zona",
+  "contentBody": {
+    "activeViewId": "miZona",
+    "configurationTags": [],
+    "pageAccess": "RequiresLogin",
+    "routeType": "custom-mi-zona",
+    "urlPrefix": "mi-zona"
+  },
+  "urlName": "mi-zona"
+}

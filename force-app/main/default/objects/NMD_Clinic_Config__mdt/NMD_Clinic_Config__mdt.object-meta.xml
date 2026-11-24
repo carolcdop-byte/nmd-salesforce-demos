@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configuración de NMD Clinic: límite anual de muestras por HCP y objetivos de visitas por segmento (call plan).</description>
+    <label>Configuración NMD Clinic</label>
+    <pluralLabel>Configuración NMD Clinic</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

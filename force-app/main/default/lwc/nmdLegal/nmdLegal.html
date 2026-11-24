@@ -1,0 +1,12 @@
+<template>
+    <section class="nmd-contenedor estrecho">
+        <h1 class="nmd-titulo">{titulo}</h1>
+        <div class="nmd-aviso"><p class="nmd-texto">Texto de demostración: No More Drama es una marca ficticia y este sitio no recoge datos reales.</p></div>
+        <template for:each={secciones} for:item="s">
+            <div key={s.titulo}>
+                <h2 class="nmd-subtitulo">{s.titulo}</h2>
+                <p class="nmd-texto">{s.texto}</p>
+            </div>
+        </template>
+    </section>
+</template>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_centro__c</fullName>
+    <label>Tipo de centro</label>
+    <description>Tipo de HCO de NMD Clinic.</description>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clínica</fullName>
+                <default>false</default>
+                <label>Clínica</label>
+            </value>
+            <value>
+                <fullName>Consulta privada</fullName>
+                <default>false</default>
+                <label>Consulta privada</label>
+            </value>
+            <value>
+                <fullName>Centro de salud</fullName>
+                <default>false</default>
+                <label>Centro de salud</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>false</required>
+    <type>Picklist</type>
+</CustomField>

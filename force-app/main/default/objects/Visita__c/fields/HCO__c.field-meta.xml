@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCO__c</fullName>
+    <label>HCO</label>
+    <description>Centro donde se hace la visita.</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>HCO</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Visitas</relationshipLabel>
+    <relationshipName>Visitas_HCO</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

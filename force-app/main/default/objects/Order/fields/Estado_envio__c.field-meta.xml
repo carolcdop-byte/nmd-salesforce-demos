@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_envio__c</fullName>
+    <label>Estado de envío</label>
+    <description>Estado logístico del pedido, independiente del estado estándar Draft/Activated. Permite seguir envíos, entregas y retrasos.</description>
+    <inlineHelpText>Pendiente: aún no ha salido del almacén. Enviado: en tránsito. Entregado: recibido por el cliente. Retrasado: ha superado la fecha prevista de entrega.</inlineHelpText>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pendiente</fullName>
+                <default>false</default>
+                <label>Pendiente</label>
+            </value>
+            <value>
+                <fullName>Enviado</fullName>
+                <default>false</default>
+                <label>Enviado</label>
+            </value>
+            <value>
+                <fullName>Entregado</fullName>
+                <default>false</default>
+                <label>Entregado</label>
+            </value>
+            <value>
+                <fullName>Retrasado</fullName>
+                <default>false</default>
+                <label>Retrasado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

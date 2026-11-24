@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Sobre nosotros",
+  "contentBody": {
+    "activeViewId": "sobreNmd",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-sobre-nmd",
+    "urlPrefix": "sobre-nmd"
+  },
+  "urlName": "sobre-nmd"
+}

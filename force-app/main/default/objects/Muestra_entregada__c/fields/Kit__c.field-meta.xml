@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kit__c</fullName>
+    <label>Kit</label>
+    <description>Kit de muestra entregado.</description>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Kit_de_muestra__c.Activo__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Kit_de_muestra__c</referenceTo>
+    <relationshipLabel>Muestras entregadas</relationshipLabel>
+    <relationshipName>Muestras</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

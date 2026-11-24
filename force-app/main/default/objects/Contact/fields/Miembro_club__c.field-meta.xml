@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Miembro_club__c</fullName>
+    <label>Socio Drama Points</label>
+    <description>El contacto es socio del club Drama Points (consumidor de NMD Beverage). Solo los socios suman puntos.</description>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

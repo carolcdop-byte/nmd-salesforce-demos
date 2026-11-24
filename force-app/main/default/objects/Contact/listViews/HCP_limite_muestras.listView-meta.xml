@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCP_limite_muestras</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Segmento__c</columns>
+    <columns>Muestras_ano__c</columns>
+    <columns>Muestras_restantes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.HCP</value>
+    </filters>
+    <filters>
+        <field>Muestras_restantes__c</field>
+        <operation>lessOrEqual</operation>
+        <value>2</value>
+    </filters>
+    <label>HCP cerca del límite de muestras</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

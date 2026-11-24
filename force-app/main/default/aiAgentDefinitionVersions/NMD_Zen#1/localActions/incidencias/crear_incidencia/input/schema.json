@@ -1,0 +1,42 @@
+{
+  "required" : [ "email", "tipo", "descripcion", "gravedad" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "descripcion" : {
+      "title" : "Descripcion",
+      "description" : "Descripción de la incidencia con las palabras del cliente",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "email" : {
+      "title" : "Email",
+      "description" : "Email del cliente",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "gravedad" : {
+      "title" : "Gravedad",
+      "description" : "Exactamente 'Baja', 'Media' o 'Alta'",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "numeroPedido" : {
+      "title" : "Numero Pedido",
+      "description" : "Número de pedido de 8 dígitos, opcional",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "tipo" : {
+      "title" : "Tipo",
+      "description" : "Exactamente 'Producto defectuoso' o 'Queja'",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

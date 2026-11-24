@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Club Drama Points",
+  "contentBody": {
+    "activeViewId": "club",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-club",
+    "urlPrefix": "club"
+  },
+  "urlName": "club"
+}

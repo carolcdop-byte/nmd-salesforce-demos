@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Casos de nivel 1-2: el agente revisa y edita el borrador de email. Según el interruptor de la configuración NMD lo envía al contacto o registra un Email simulado.</description>
+    <flowDefinition>NMD_Enviar_Respuesta</flowDefinition>
+    <label>Enviar respuesta</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

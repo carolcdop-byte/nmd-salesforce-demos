@@ -1,0 +1,106 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Login",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"cfaaf042-c882-4c39-a255-582784f5671e\",\"columns\":[{\"UUID\":\"04d464ef-477f-4103-a6f0-20450260737b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "alignment": "left",
+                        "imageInfo": "",
+                        "imageInfoMobile": "",
+                        "logoWidth": 250
+                      },
+                      "definition": "dxp_content_layout:siteLogo",
+                      "id": "bff88a7c-21e2-4742-9da5-116e998e26c7",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "forgotPasswordLabel": "¿Has olvidado tu contraseña?",
+                        "forgotPasswordUrl": "/ForgotPassword",
+                        "loginButtonLabel": "Entrar",
+                        "passwordLabel": "Contraseña",
+                        "selfRegisterLabel": "",
+                        "selfRegisterUrl": "/SelfRegister",
+                        "startUrl": "",
+                        "usernameLabel": "Usuario"
+                      },
+                      "definition": "community_login:loginForm",
+                      "id": "78f5a974-f083-4ee6-ba8e-e322e1041bb3",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "employeeLoginLinkLabel": "¿Trabajas en No More Drama? Entra aquí"
+                      },
+                      "definition": "community_login:employeeLoginLink",
+                      "id": "af53cec1-683f-4d60-8f20-3419cfaee94f",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "04d464ef-477f-4103-a6f0-20450260737b",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "cfaaf042-c882-4c39-a255-582784f5671e",
+              "type": "component"
+            }
+          ],
+          "id": "776ffca3-6ce9-4d64-add3-dd86a95472db",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "Entrar | NMD Beverage",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "5e5c852f-3a6b-4f2a-b302-9e8855256ea8",
+              "type": "component"
+            }
+          ],
+          "id": "73b16750-456f-4e6a-a0b9-4dea0bffd30e",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "2fb05424-0a6f-4cc6-8e5d-bc377862b462",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "login-main"
+  },
+  "urlName": "login"
+}

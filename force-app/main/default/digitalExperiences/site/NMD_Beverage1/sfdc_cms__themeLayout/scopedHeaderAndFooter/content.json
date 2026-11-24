@@ -1,0 +1,115 @@
+{
+  "type": "sfdc_cms__themeLayout",
+  "title": "Scoped Header and Footer",
+  "contentBody": {
+    "component": {
+      "attributes": {
+        "hideThemeFooter": false,
+        "showThemeFooterAtBottom": true,
+        "stickyThemeHeader": false
+      },
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"4119e619-9f05-4313-b604-dfb7d5c5e0ed\",\"columns\":[{\"UUID\":\"81f37428-4922-401e-a241-5486fb853e21\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "id": "81f37428-4922-401e-a241-5486fb853e21",
+                  "name": "headerSection",
+                  "title": "Encabezado de tema",
+                  "type": "region",
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:nmdCabecera",
+                      "id": "9b248d57-6b98-5681-ad70-d9fd4913288a",
+                      "type": "component"
+                    }
+                  ]
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "4119e619-9f05-4313-b604-dfb7d5c5e0ed",
+              "type": "component"
+            }
+          ],
+          "id": "77f712b2-d1e9-4050-be77-3c0eb1c859e9",
+          "name": "header",
+          "title": "Encabezado de tema",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"92f2582c-98f9-4e07-980f-2fe04b8242a5\",\"columns\":[{\"UUID\":\"c5847c9d-1b3e-4160-ba9c-9e69a89dbc63\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "id": "c5847c9d-1b3e-4160-ba9c-9e69a89dbc63",
+                  "name": "footerSection",
+                  "title": "Pie de tema",
+                  "type": "region",
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:nmdPie",
+                      "id": "18577066-8933-564f-afd5-6cc8697e99de",
+                      "type": "component"
+                    },
+                    {
+                      "attributes": {
+                        "deploymentName": "NMD_Beverage_Web",
+                        "siteEndpoint": "https://tu-dominio.develop.my.site.com/ESWNMDBeverageW1794918513088",
+                        "siteDeploymentURL": "https://tu-dominio.develop.my.site.com/ESWNMDBeverageW1794918513088",
+                        "scrt2URL": "https://tu-dominio.develop.my.salesforce-scrt.com",
+                        "scrtUrl": "https://tu-dominio.develop.my.salesforce-scrt.com"
+                      },
+                      "definition": "experience_messaging:embeddedMessaging",
+                      "id": "5e6616d1-5034-562c-92b2-898194716a6a",
+                      "type": "component"
+                    }
+                  ]
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "92f2582c-98f9-4e07-980f-2fe04b8242a5",
+              "type": "component"
+            }
+          ],
+          "id": "8a819264-ce50-4823-9896-b1da043d8767",
+          "name": "footer",
+          "title": "Pie de tema",
+          "type": "region"
+        }
+      ],
+      "definition": "community_byo:scopedHeaderAndFooter",
+      "id": "838475a8-b83e-477a-b2ba-17cd24af3de5",
+      "type": "component"
+    }
+  },
+  "urlName": "scoped-header-and-footer"
+}

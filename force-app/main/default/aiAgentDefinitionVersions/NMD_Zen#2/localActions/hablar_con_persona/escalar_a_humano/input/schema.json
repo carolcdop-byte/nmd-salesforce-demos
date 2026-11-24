@@ -1,0 +1,28 @@
+{
+  "required" : [ "resumen" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "email" : {
+      "title" : "Email",
+      "description" : "Email del cliente, si lo ha dado",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "numeroPedido" : {
+      "title" : "Numero Pedido",
+      "description" : "Número de pedido que ha dado el cliente (por ejemplo 00000113), si lo ha dado",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "resumen" : {
+      "title" : "Resumen",
+      "description" : "Resumen de la conversación: qué necesita el cliente, qué se ha intentado y su estado de ánimo",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

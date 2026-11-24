@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cantidad__c</fullName>
+    <label>Cantidad</label>
+    <description>Número de kits entregados.</description>
+    <defaultValue>1</defaultValue>
+    <precision>3</precision>
+    <scale>0</scale>
+    <unique>false</unique>
+    <required>true</required>
+    <type>Number</type>
+</CustomField>

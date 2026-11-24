@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Reanaliza el caso con IA (Prompt Builder): nivel de drama, categoría, resumen, guía y borrador. El agente revisa y decide; al guardar, las reglas recalculan el camino. No envía nada al cliente.</description>
+    <flowDefinition>NMD_Detectar_Drama</flowDefinition>
+    <label>Detectar drama</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

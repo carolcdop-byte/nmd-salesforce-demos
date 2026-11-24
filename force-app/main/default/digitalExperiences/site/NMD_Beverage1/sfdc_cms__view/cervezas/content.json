@@ -1,0 +1,78 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Cervezas",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"85697212-397d-5509-bf3d-bf6079b678c4\",\"columns\":[{\"UUID\":\"bcaf6754-2568-5dc8-8b97-1094d1e8416a\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:nmdCatalogo",
+                      "id": "d6c1c0ce-d9be-5721-8717-ccdf44c46a5d",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "bcaf6754-2568-5dc8-8b97-1094d1e8416a",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "85697212-397d-5509-bf3d-bf6079b678c4",
+              "type": "component"
+            }
+          ],
+          "id": "72d178e6-78f8-5b8d-b266-94be0620ab8d",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "Catálogo de cervezas NMD.",
+                "pageTitle": "Cervezas",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "bb52ec07-72b3-5bd1-9e74-e9c417d53734",
+              "type": "component"
+            }
+          ],
+          "id": "c6e51c26-286a-5440-8b87-f9b27c220be2",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "cef618a9-1bb3-53ce-81da-d697d747f60e",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-cervezas"
+  },
+  "urlName": "cervezas"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BrandingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brandingSetProperty>
+        <propertyName>BRAND_COLOR</propertyName>
+        <propertyValue>#62058A</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>BRAND_IMAGE</propertyName>
+        <propertyValue>/file-asset/NMD_Logo?v=1</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>HEADER_BACKGROUND_COLOR</propertyName>
+        <propertyValue>#370355</propertyValue>
+    </brandingSetProperty>
+    <masterLabel>No More Drama</masterLabel>
+</BrandingSet>

@@ -1,0 +1,78 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Club Drama Points",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"660b2594-49ba-53be-beed-e5b65394bb53\",\"columns\":[{\"UUID\":\"271478e0-435e-55d5-a1dd-c9dc320932c8\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:nmdClub",
+                      "id": "d9fa74ad-f61c-54b9-ac86-4b64ddaf8424",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "271478e0-435e-55d5-a1dd-c9dc320932c8",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "660b2594-49ba-53be-beed-e5b65394bb53",
+              "type": "component"
+            }
+          ],
+          "id": "221977a9-e9e7-5ec9-8ef6-415c08d16dde",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "Niveles y reglas del club Drama Points.",
+                "pageTitle": "Club Drama Points",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "b297a6f7-a889-505f-9c73-ba4b9fd7b6cd",
+              "type": "component"
+            }
+          ],
+          "id": "91661d38-f7b7-566c-aff0-8338043c4c4e",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "3a0edc62-d75e-5654-9056-7565dc2fc092",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-club"
+  },
+  "urlName": "club"
+}

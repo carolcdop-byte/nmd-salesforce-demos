@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presupuesto__c</fullName>
+    <label>Presupuesto</label>
+    <description>Presupuesto sincronizado del que salen las líneas del pedido (Flow NMD_Pedido_Desde_Oportunidad).</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Quote</referenceTo>
+    <relationshipLabel>Pedidos NMD</relationshipLabel>
+    <relationshipName>Pedidos_NMD</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

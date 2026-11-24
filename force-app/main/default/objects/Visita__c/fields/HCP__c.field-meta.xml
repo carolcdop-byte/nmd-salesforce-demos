@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCP__c</fullName>
+    <label>HCP</label>
+    <description>Profesional visitado.</description>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>HCP</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Visitas</relationshipLabel>
+    <relationshipName>Visitas</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

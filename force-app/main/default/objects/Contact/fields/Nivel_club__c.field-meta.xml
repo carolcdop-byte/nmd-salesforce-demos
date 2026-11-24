@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nivel_club__c</fullName>
+    <label>Nivel del club</label>
+    <description>Nivel del club según los puntos: Tranqui, Zen o Drama Free (umbrales en NMD_Club_Config__mdt).</description>
+    <formula>IF(NOT(Miembro_club__c), '', IF(BLANKVALUE(Drama_Points__c, 0) &gt;= $CustomMetadata.NMD_Club_Config__mdt.General.Umbral_Drama_Free__c, 'Drama Free', IF(BLANKVALUE(Drama_Points__c, 0) &gt;= $CustomMetadata.NMD_Club_Config__mdt.General.Umbral_Zen__c, 'Zen', 'Tranqui')))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <unique>false</unique>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

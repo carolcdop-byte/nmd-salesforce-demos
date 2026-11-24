@@ -1,0 +1,78 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Sobre nosotros",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"ec490482-1732-542b-adac-e82c6d2e1ea2\",\"columns\":[{\"UUID\":\"a74e37b1-64a8-564f-913d-05d3970ec77d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:nmdSobre",
+                      "id": "6c54691c-43f8-5272-80ac-c4a014d6c171",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "a74e37b1-64a8-564f-913d-05d3970ec77d",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "ec490482-1732-542b-adac-e82c6d2e1ea2",
+              "type": "component"
+            }
+          ],
+          "id": "8446b9d2-2669-57bd-beef-89a8f1c02aa9",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "Quiénes somos en NMD Beverage.",
+                "pageTitle": "Sobre nosotros",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "195e6c03-dab5-519d-b087-2e2dec2d8739",
+              "type": "component"
+            }
+          ],
+          "id": "76230d25-3a07-5ed2-a950-1c8186fd13c0",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "2316af81-29ba-5384-a567-a4d7d3595797",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-sobre-nmd"
+  },
+  "urlName": "sobre-nmd"
+}

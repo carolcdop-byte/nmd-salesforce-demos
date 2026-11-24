@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categoria_IA__c</fullName>
+    <label>Categoría IA</label>
+    <description>Categoría que propone la IA en el triaje. Si Tipo está vacío, el triaje lo rellena con este valor.</description>
+    <inlineHelpText>Propuesta por IA.</inlineHelpText>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consulta de pedido</fullName>
+                <default>false</default>
+                <label>Consulta de pedido</label>
+            </value>
+            <value>
+                <fullName>Devolución</fullName>
+                <default>false</default>
+                <label>Devolución</label>
+            </value>
+            <value>
+                <fullName>Producto defectuoso</fullName>
+                <default>false</default>
+                <label>Producto defectuoso</label>
+            </value>
+            <value>
+                <fullName>Queja</fullName>
+                <default>false</default>
+                <label>Queja</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

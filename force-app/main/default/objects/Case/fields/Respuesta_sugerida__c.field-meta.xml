@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Respuesta_sugerida__c</fullName>
+    <label>Borrador de email</label>
+    <description>Borrador de email al cliente en tono cero drama que propone la IA para casos de nivel 1-2. Nunca se envía solo: el agente lo revisa y lo envía con el botón Enviar respuesta.</description>
+    <inlineHelpText>Borrador generado por IA (solo niveles 1-2). Revísalo y envíalo con el botón Enviar respuesta.</inlineHelpText>
+    <length>4000</length>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,20 @@
+<template>
+    <section class="nmd-contenedor">
+        <h1 class="nmd-titulo">Nuestras cervezas</h1>
+        <p class="nmd-texto">Cuatro cervezas, cero dramas. Las encuentras en tu bar de confianza y en nuestra tienda.</p>
+        <template lwc:if={error}>
+            <div class="nmd-error" role="alert">No hemos podido cargar el catálogo. Inténtalo de nuevo en un momento.</div>
+        </template>
+        <div class="nmd-rejilla">
+            <template for:each={cervezas} for:item="c">
+                <article key={c.codigo} class="nmd-tarjeta cerveza">
+                    <img src={c.imagen} alt={c.alt} class="botella">
+                    <h2 class="nmd-subtitulo">{c.nombre}</h2>
+                    <p class="nmd-texto">{c.descripcion}</p>
+                    <span class="nmd-etiqueta">{c.codigo}</span>
+                </article>
+            </template>
+        </div>
+        <p class="nota">+18. Bebe con responsabilidad.</p>
+    </section>
+</template>

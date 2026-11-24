@@ -1,0 +1,40 @@
+<template>
+    <section class="nmd-contenedor">
+        <h1 class="nmd-titulo">Club Drama Points</h1>
+        <p class="nmd-texto">Cada pedido entregado suma puntos. Cuantos más puntos, menos drama.</p>
+        <img src={club} alt="Niveles del club: Tranqui, Zen y Drama Free" class="club-img">
+        <template lwc:if={reglas}>
+            <div class="nmd-rejilla niveles">
+                <div class="nmd-tarjeta"><h2 class="nmd-subtitulo">Tranqui</h2><p class="nmd-texto">Desde el primer pedido. Bienvenido al club.</p></div>
+                <div class="nmd-tarjeta"><h2 class="nmd-subtitulo">Zen</h2><p class="nmd-texto">A partir de {reglas.umbralZen} puntos.</p></div>
+                <div class="nmd-tarjeta"><h2 class="nmd-subtitulo">Drama Free</h2><p class="nmd-texto">A partir de {reglas.umbralDramaFree} puntos. El nivel máximo de calma.</p></div>
+            </div>
+            <div class="nmd-aviso"><p class="nmd-texto"><strong>Cómo se suman:</strong> {reglas.puntosPorPedido} puntos por cada pedido entregado + {reglas.puntosPorEuro} punto por cada euro del pedido. Tus puntos y tu nivel están en <a href={rutas.miZona}>Mi zona</a>.</p></div>
+        </template>
+
+        <template lwc:if={esInvitado}>
+            <h2 class="nmd-subtitulo">Únete al club</h2>
+            <template lwc:if={enviado}>
+                <div class="nmd-aviso" role="status"><p class="nmd-texto"><strong>¡Hecho!</strong> Hemos recibido tu solicitud. Te escribiremos para activar tu cuenta del club.</p></div>
+            </template>
+            <template lwc:else>
+                <form class="nmd-tarjeta formulario" onsubmit={enviar} novalidate>
+                    <lightning-input label="Nombre" name="nombre" required max-length="40" onchange={cambiar}></lightning-input>
+                    <lightning-input label="Apellidos" name="apellidos" required max-length="80" onchange={cambiar}></lightning-input>
+                    <lightning-input type="email" label="Email" name="email" required onchange={cambiar}></lightning-input>
+                    <div class="nmd-trampa" aria-hidden="true">
+                        <label>Web<input type="text" name="web" tabindex="-1" autocomplete="off" onchange={cambiarTrampa}></label>
+                    </div>
+                    <lightning-input type="checkbox" name="acepta" required onchange={cambiarCheck}
+                        label="Acepto la política de privacidad y recibir comunicaciones del club"></lightning-input>
+                    <p class="legal">Lee la <a href={rutas.privacidad} target="_blank">política de privacidad</a>. Puedes darte de baja cuando quieras.</p>
+                    <template lwc:if={error}><div class="nmd-error" role="alert">{error}</div></template>
+                    <button type="submit" class="nmd-boton" disabled={enviando}>Quiero unirme</button>
+                </form>
+            </template>
+        </template>
+        <template lwc:else>
+            <div class="nmd-aviso"><p class="nmd-texto">Ya tienes cuenta: consulta tus puntos en <a href={rutas.miZona}>Mi zona</a>.</p></div>
+        </template>
+    </section>
+</template>

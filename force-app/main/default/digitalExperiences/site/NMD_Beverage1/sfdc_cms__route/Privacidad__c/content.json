@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Privacidad",
+  "contentBody": {
+    "activeViewId": "privacidad",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-privacidad",
+    "urlPrefix": "privacidad"
+  },
+  "urlName": "privacidad"
+}

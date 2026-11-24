@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consentimiento_RGPD__c</fullName>
+    <label>Consentimiento RGPD</label>
+    <description>El HCP ha dado su consentimiento para recibir visitas y comunicaciones de NMD Clinic. Sin él no se pueden registrar visitas realizadas ni entregar muestras.</description>
+    <inlineHelpText>Sin consentimiento no se puede marcar una visita como Realizada ni entregar muestras.</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

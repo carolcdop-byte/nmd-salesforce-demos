@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cajas_totales__c</fullName>
+    <label>Cajas totales</label>
+    <description>Suma de cajas de todas las líneas. La calcula el Flow NMD_Descuento_Volumen.</description>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

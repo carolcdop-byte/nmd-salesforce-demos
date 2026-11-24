@@ -1,0 +1,80 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Privacidad",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "componentSpacerSize": "",
+                "layoutDirectionDesktop": "row",
+                "layoutDirectionMobile": "column",
+                "layoutDirectionTablet": "column",
+                "maxContentWidth": "",
+                "sectionColumnGutterWidth": "",
+                "sectionConfig": "{\"UUID\":\"c66e3aed-5050-527f-8c25-502d0bcfd5a9\",\"columns\":[{\"UUID\":\"d4f0184e-aa47-5b97-b3c9-a67cd37ef774\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+                "sectionMinHeight": "",
+                "sectionVerticalAlign": "flex-start"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {
+                        "tipo": "privacidad"
+                      },
+                      "definition": "c:nmdLegal",
+                      "id": "bc3506ab-5ade-5bb5-bb9a-90d2ebf81b2f",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "d4f0184e-aa47-5b97-b3c9-a67cd37ef774",
+                  "name": "col1",
+                  "title": "Columna 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "c66e3aed-5050-527f-8c25-502d0bcfd5a9",
+              "type": "component"
+            }
+          ],
+          "id": "6329e6ba-8c23-594e-ae49-2d840cb45fee",
+          "name": "content",
+          "title": "Contenido",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "Privacidad",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "de77d386-f954-5c8b-8d56-544a238ceef2",
+              "type": "component"
+            }
+          ],
+          "id": "12c9067b-2f35-5f30-84c4-653458f5fe9f",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "2b35a6b3-5e38-5e18-8aca-49b5c5fafe14",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-privacidad"
+  },
+  "urlName": "privacidad"
+}

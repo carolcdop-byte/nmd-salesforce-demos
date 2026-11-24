@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nivel_drama__c</fullName>
+    <label>Nivel de drama</label>
+    <description>Nivel de drama del caso de 1 (consulta tranquila) a 5 (crisis). Lo propone la IA en el triaje (al crear el caso o con el botón Detectar drama); el agente puede cambiarlo y queda en el historial.</description>
+    <inlineHelpText>1 = tranquilo · 3 = molesto · 5 = muy enfadado o caso crítico. Propuesto por IA y revisado por el agente.</inlineHelpText>
+    <precision>1</precision>
+    <scale>0</scale>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

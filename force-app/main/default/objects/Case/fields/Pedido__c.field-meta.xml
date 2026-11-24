@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pedido__c</fullName>
+    <label>Pedido</label>
+    <description>Pedido de No More Drama al que se refiere el caso. Lo rellenan las acciones del Agente Zen (devoluciones e incidencias) y permite ver los casos desde el pedido.</description>
+    <inlineHelpText>Pedido del cliente relacionado con este caso, si lo hay.</inlineHelpText>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Order</referenceTo>
+    <relationshipLabel>Casos NMD</relationshipLabel>
+    <relationshipName>Casos_NMD</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

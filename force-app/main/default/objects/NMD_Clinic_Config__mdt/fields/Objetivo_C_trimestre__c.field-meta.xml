@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objetivo_C_trimestre__c</fullName>
+    <label>Objetivo segmento C (visitas/trimestre)</label>
+    <description>Visitas al trimestre para HCP de segmento C.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

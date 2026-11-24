@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puntos_otorgados__c</fullName>
+    <label>Puntos otorgados</label>
+    <description>El pedido ya sumó sus Drama Points (garantiza que solo se suman una vez).</description>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

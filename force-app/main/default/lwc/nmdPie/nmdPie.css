@@ -1,0 +1,7 @@
+@import 'c/nmdEstilos';
+.pie { background: var(--nmd-morado); color: #fff; margin-top: 2rem; }
+.interior { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; display: grid; gap: .5rem; }
+.lema { font-weight: 700; margin: 0; }
+.legal { display: flex; flex-wrap: wrap; gap: 1rem; }
+.legal a, .legal a:link, .legal a:visited { color: var(--nmd-amarillo); }
+.nota { font-size: .85rem; opacity: .85; margin: 0; }

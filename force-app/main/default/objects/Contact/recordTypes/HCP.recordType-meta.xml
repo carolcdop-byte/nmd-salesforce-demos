@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCP</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>NMD_HCP</compactLayoutAssignment>
+    <description>Healthcare Professional: psicólogo, psiquiatra u otro profesional que la delegada de NMD Clinic visita.</description>
+    <label>HCP</label>
+</RecordType>

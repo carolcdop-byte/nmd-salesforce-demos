@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cobertura__c</fullName>
+    <label>Cobertura</label>
+    <description>Cubierto si el HCP ha recibido las visitas de su objetivo en el periodo; Sin cubrir si no. Lo calcula el Flow NMD_Clinic_Recalcular_HCP.</description>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cubierto</fullName>
+                <default>false</default>
+                <label>Cubierto</label>
+            </value>
+            <value>
+                <fullName>Sin cubrir</fullName>
+                <default>false</default>
+                <label>Sin cubrir</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>false</required>
+    <type>Picklist</type>
+</CustomField>

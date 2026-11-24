@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Prepara la visita con IA (Prompt Builder): resumen del HCP, últimas visitas, muestras disponibles y temas. Sin consejo médico. La delegada revisa y decide si lo guarda.</description>
+    <flowDefinition>NMD_Clinic_Prepara_Visita</flowDefinition>
+    <label>Prepara mi visita</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

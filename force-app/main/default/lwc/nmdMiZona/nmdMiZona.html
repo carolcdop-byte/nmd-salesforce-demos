@@ -1,0 +1,73 @@
+<template>
+    <section class="nmd-contenedor">
+        <template lwc:if={cargando}>
+            <lightning-spinner alternative-text="Cargando tu zona" size="medium"></lightning-spinner>
+        </template>
+        <template lwc:if={error}>
+            <div class="nmd-error" role="alert">{error}</div>
+        </template>
+        <template lwc:if={datos}>
+            <h1 class="nmd-titulo">Hola, {datos.nombre}</h1>
+            <template lwc:if={datos.socio}>
+                <div class="nmd-tarjeta club">
+                    <div>
+                        <p class="etiqueta-club">Club Drama Points</p>
+                        <p class="nivel">Nivel {datos.nivel}</p>
+                        <p class="puntos">{datos.puntos} puntos</p>
+                    </div>
+                    <div class="progreso-caja">
+                        <template lwc:if={datos.siguienteNivel}>
+                            <div class="barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={porcentaje}
+                                aria-label="Progreso hacia el siguiente nivel">
+                                <div class="relleno" style={estiloBarra}></div>
+                            </div>
+                            <p class="nmd-texto">Te faltan <strong>{datos.faltan} puntos</strong> para ser <strong>{datos.siguienteNivel}</strong>.</p>
+                        </template>
+                        <template lwc:else>
+                            <p class="nmd-texto">Has llegado al nivel máximo. Cero drama.</p>
+                        </template>
+                    </div>
+                </div>
+            </template>
+
+            <h2 class="nmd-subtitulo">Mis pedidos</h2>
+            <template lwc:if={hayPedidos}>
+                <div class="tabla-caja">
+                    <table class="tabla">
+                        <thead><tr><th scope="col">Pedido</th><th scope="col">Fecha</th><th scope="col">Productos</th>
+                            <th scope="col">Estado de envío</th><th scope="col">Entrega prevista</th><th scope="col">Importe</th><th scope="col">Puntos</th></tr></thead>
+                        <tbody>
+                            <template for:each={pedidos} for:item="p">
+                                <tr key={p.numero}>
+                                    <td data-label="Pedido">{p.numero}</td>
+                                    <td data-label="Fecha"><lightning-formatted-date-time value={p.fecha} time-zone="UTC"></lightning-formatted-date-time></td>
+                                    <td data-label="Productos">{p.productos}</td>
+                                    <td data-label="Estado de envío"><span class={p.claseEstado}>{p.estadoEnvio}</span></td>
+                                    <td data-label="Entrega prevista"><lightning-formatted-date-time value={p.fechaPrevista} time-zone="UTC"></lightning-formatted-date-time></td>
+                                    <td data-label="Importe"><lightning-formatted-number value={p.importe} format-style="currency" currency-code="EUR"></lightning-formatted-number></td>
+                                    <td data-label="Puntos">{p.textoPuntos}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+            <template lwc:else><p class="nmd-texto">Todavía no tienes pedidos.</p></template>
+
+            <h2 class="nmd-subtitulo">Mis casos</h2>
+            <template lwc:if={hayCasos}>
+                <ul class="casos">
+                    <template for:each={casos} for:item="c">
+                        <li key={c.numero} class="nmd-tarjeta caso">
+                            <span class="nmd-etiqueta">{c.estado}</span>
+                            <strong>{c.numero}</strong> · {c.asunto}
+                            <span class="fecha"><lightning-formatted-date-time value={c.fecha}></lightning-formatted-date-time></span>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            <template lwc:else><p class="nmd-texto">No tienes casos abiertos. Cero drama.</p></template>
+            <p class="nmd-texto ayuda">¿Algo no va bien? <a href={rutas.drama}>Cuéntanos tu drama</a> o habla con Zen en el chat.</p>
+        </template>
+    </section>
+</template>

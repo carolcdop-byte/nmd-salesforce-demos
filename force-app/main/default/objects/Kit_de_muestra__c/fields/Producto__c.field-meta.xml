@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Producto__c</fullName>
+    <label>Producto</label>
+    <description>Producto Clinic (Product2) del que sale el kit. Solo lo ven los usuarios con acceso a productos.</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Kits de muestra</relationshipLabel>
+    <relationshipName>Kits_de_muestra</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>NMD Clinic: antes de borrar una muestra, recalcula el HCP sin ella.</description>
+    <environments>Default</environments>
+    <interviewLabel>NMD Clinic Muestra Borrado {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NMD Clinic Muestra Borrado</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Recalcular</targetReference>
+        </connector>
+        <object>Muestra_entregada__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Recalcular</name>
+        <label>Recalcular HCP</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>NMD_Clinic_Recalcular_HCP</flowName>
+        <inputAssignments>
+            <name>hcpId</name>
+            <value>
+                <elementReference>$Record.HCP__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>muestraExcluida</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

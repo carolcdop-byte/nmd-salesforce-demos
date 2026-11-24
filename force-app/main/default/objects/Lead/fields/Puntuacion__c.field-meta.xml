@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puntuacion__c</fullName>
+    <label>Puntuación</label>
+    <description>Puntuación automática del Flow NMD_Puntuar_Lead según tipo de negocio y volumen.</description>
+    <inlineHelpText>Caliente: 100 o más cajas/mes, o festival/distribuidor con 50 o más. Templado: 30-99. Frío: menos de 30 o sin volumen.</inlineHelpText>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Caliente</fullName>
+                <default>false</default>
+                <label>Caliente</label>
+            </value>
+            <value>
+                <fullName>Templado</fullName>
+                <default>false</default>
+                <label>Templado</label>
+            </value>
+            <value>
+                <fullName>Frío</fullName>
+                <default>false</default>
+                <label>Frío</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

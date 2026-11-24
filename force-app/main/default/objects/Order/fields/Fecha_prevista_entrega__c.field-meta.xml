@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_prevista_entrega__c</fullName>
+    <label>Fecha prevista de entrega</label>
+    <description>Fecha comprometida con el cliente para la entrega del pedido. Se compara con la fecha actual para detectar retrasos.</description>
+    <inlineHelpText>Fecha en la que el cliente espera recibir el pedido. Si se supera sin entregar, marca el estado de envío como Retrasado.</inlineHelpText>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

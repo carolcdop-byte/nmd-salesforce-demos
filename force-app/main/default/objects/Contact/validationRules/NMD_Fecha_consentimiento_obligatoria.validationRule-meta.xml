@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMD_Fecha_consentimiento_obligatoria</fullName>
+    <active>true</active>
+    <description>Si el HCP da su consentimiento RGPD, hay que registrar la fecha.</description>
+    <errorConditionFormula>AND(Consentimiento_RGPD__c, ISBLANK(Fecha_consentimiento__c))</errorConditionFormula>
+    <errorDisplayField>Fecha_consentimiento__c</errorDisplayField>
+    <errorMessage>Indica la fecha en que el HCP dio su consentimiento RGPD.</errorMessage>
+</ValidationRule>

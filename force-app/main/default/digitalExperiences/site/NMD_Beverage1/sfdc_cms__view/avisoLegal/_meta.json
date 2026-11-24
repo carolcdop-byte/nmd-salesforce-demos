@@ -1,0 +1,5 @@
+{
+  "apiName": "avisoLegal",
+  "type": "sfdc_cms__view",
+  "path": "views"
+}

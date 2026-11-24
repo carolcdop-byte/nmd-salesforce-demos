@@ -1,0 +1,12 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Cervezas",
+  "contentBody": {
+    "activeViewId": "cervezas",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-cervezas",
+    "urlPrefix": "cervezas"
+  },
+  "urlName": "cervezas"
+}
